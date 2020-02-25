@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bj_grean"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#55ffffff"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary">
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="会议名"
+                android:textColor="#525252"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/meeting_name"
+                android:hint="会议名"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="#525252"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#969595"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="会议开始时间"
+                android:textColor="#525252"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/meeting_time"
+                android:hint="会议开始时间"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="#525252"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#969595"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="会议持续时间"
+                android:textColor="#525252"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/meeting_last_time"
+                android:hint="会议持续时间"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="#525252"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#969595"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="会议地点"
+                android:textColor="#525252"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/meeting_area"
+                android:hint="会议地点"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="#525252"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#969595"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="会议内容"
+                android:textColor="#525252"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/meeting_content"
+                android:hint="会议内容"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="#525252"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#969595"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:hint="会议状态"
+                android:textColor="#525252"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/meeting_status"
+                android:hint="会议状态"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="#525252"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_weight="2"-->
+            <!--android:background="@drawable/boder"-->
+            <!--android:gravity="center"-->
+            <!--android:text="会议开始时间"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="20sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/meeting_time"-->
+            <!--android:hint="会议开始时间"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/boder"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="25dp" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_weight="2"-->
+            <!--android:background="@drawable/boder"-->
+            <!--android:gravity="center"-->
+            <!--android:text="会议持续时间"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="20sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/meeting_last_time"-->
+            <!--android:hint="会议持续时间"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/boder"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="25dp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_weight="2"-->
+            <!--android:background="@drawable/boder"-->
+            <!--android:gravity="center"-->
+            <!--android:text="会议地点"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="25dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/meeting_area"-->
+            <!--android:hint="会议地点"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/boder"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="25dp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_weight="2"-->
+            <!--android:background="@drawable/boder"-->
+            <!--android:gravity="center"-->
+            <!--android:text="会议内容"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="25dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/meeting_content"-->
+            <!--android:hint="会议内容"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/boder"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="25dp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_weight="2"-->
+            <!--android:background="@drawable/boder"-->
+            <!--android:gravity="center"-->
+            <!--android:text="会议状态"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="25dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/meeting_status"-->
+            <!--android:hint="会议状态"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/boder"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="25dp" />-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_meeting_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="参会资料"
+            android:background="@drawable/btn_bg"
+            android:textColor="#f7f7f7"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_meeting_attend_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="参会人员"
+            android:background="@drawable/btn_bg"
+            android:textColor="#f7f7f7"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_notes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_meeting_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="会议笔记"
+            android:background="@drawable/btn_bg"
+            android:textColor="#f7f7f7"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_meeting_vote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="会议投票"
+            android:background="@drawable/btn_bg"
+            android:textColor="#f7f7f7"
+            android:textSize="20dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_meeting_attend_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="会议录音"
+            android:background="@drawable/btn_bg"
+            android:textColor="#f7f7f7"
+            android:textSize="20dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:elevation="10dp"
+        android:src="@drawable/ic_done"
+        app:backgroundTint="@color/hotpink"
+        app:elevation="8dp" />
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.v7.widget.Toolbar
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tb_toolbar"
+                android:layout_width="match_parent"
+                app:theme="@style/OverFlowMenuTheme"
+                app:popupTheme="@style/AppTheme"
+                android:background="@color/colorPrimary"
+                android:layout_height="150dp"
+                android:minHeight="@dimen/dp_56"
+                app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed" />
+            <TextView
+                android:id="@+id/tv_my_meeting"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="50dp"
+                android:text="会议笔记"
+                android:paddingStart="10dp"
+                android:textSize="23dp"
+                android:textColor="#fff"
+                android:gravity="start"/>
+            <EditText
+                android:id="@+id/et_write_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="300dp"
+                android:gravity="top"
+                android:background="@drawable/boder"
+                android:inputType="textMultiLine|text"
+                android:maxLines="15"
+                android:minLines="15"
+                android:scrollbars="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textSize="18dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/btn_commit_notes"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:background="@drawable/btn_bg"
+        android:textColor="#fff"
+        android:padding="5dp"
+        android:text="上传" />
+</LinearLayout>

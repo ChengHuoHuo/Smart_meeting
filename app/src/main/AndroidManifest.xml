@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.yihuier_phone">
+
+    <!-- 调用相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/bz_circle"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" />
+        <activity
+            android:name=".MeetingOrderActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".PicMeetingOrderActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+
+                <!-- 协议部分， -->
+                <data
+                    android:host="mainHost"
+                    android:path="/mainDetail"
+                    android:scheme="scheme" />
+                <!-- 下面这几行也必须得设置 -->
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+		    <activity android:name=".RecordActivity"> </activity>
+        <activity android:name=".MsgofMeetingRoomActivity" />
+        <activity android:name=".MeetingPeopleActivity" />
+        <activity android:name=".MyListView" />
+        <activity android:name=".TabLayoutTopActivity" />
+        <activity android:name=".MsgActivity" />
+        <activity android:name=".Page.MsgDetailActivity" />
+        <activity android:name=".personalinfo.PersonalMsgActivity" ></activity>
+        <activity android:name=".personalinfo.FaceActivity" />
+        <activity android:name=".Mine" />
+        <activity android:name=".change_phonenum" />
+        <activity android:name=".changemail" />
+        <activity android:name=".resetpassword" />
+        <activity android:name=".confirm_reset_password" />
+        <activity android:name=".login_reset_password" />
+        <activity android:name=".Meeting_room_information_show" />
+        <activity android:name=".Meeting_information_show" />
+        <activity android:name=".My_attend_meeting" />
+        <activity android:name=".Write_Notes" />
+        <activity android:name=".Meeting_Data" />
+        <activity android:name=".Notes_show" />
+        <activity android:name=".Note_show_information" />
+        <activity android:name=".Attend_meeting_information" />
+        <activity android:name=".Meeting_Vote" />
+        <activity android:name=".RecordActivity" />
+
+        <service android:name=".RecordingService" />
+
+        <activity android:name=".UploadActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:authorities="com.example.yihuier_phone.fileprovider"
+            android:name="android.support.v4.content.FileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_paths"/> </provider>
+    </application>
+
+</manifest>

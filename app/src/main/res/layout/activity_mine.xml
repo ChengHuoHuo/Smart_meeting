@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ebebeb">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/bj_top_black"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/bz_circle" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_bg_white_to_grey"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:textColor="#353535"
+            android:textSize="18sp"
+            android:text="姓     名："/>
+
+        <TextView
+            android:id="@+id/change_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:hint="姓名"
+            android:paddingLeft="5dp"
+            android:textColor="#353535"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_bg_white_to_grey"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textColor="#353535"
+            android:textSize="18sp"
+            android:text="员工号："/>
+
+        <TextView
+            android:id="@+id/change_account"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:hint="员工号"
+            android:paddingLeft="5dp"
+            android:textColor="#353535"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/change_password"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_bg_white_to_grey"
+        android:textColor="#353535"
+        android:text="修改密码"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/change_phonenum"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_bg_white_to_grey"
+        android:textColor="#353535"
+        android:textSize="18sp"
+        android:text="修改手机号" />
+    <Button
+        android:id="@+id/change_email"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_bg_white_to_grey"
+        android:textColor="#353535"
+        android:textSize="18sp"
+        android:text="修改邮箱"/>
+    <Button
+        android:id="@+id/exit_account"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_bg_white_to_grey"
+        android:textColor="#353535"
+        android:textSize="18sp"
+        android:text="退出"/>
+</LinearLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@drawable/bj_top_black"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center_horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/mine_user_image"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/bz_circle" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/mine_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:text="用户名"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/mine_user_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:text="工号"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_mymeeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal|center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="8"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="我参加的会议"
+            android:textColor="#353535"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/btn_mymeeting"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/rightcircle" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/btn_bg_white_to_grey"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/meeting_nocomplete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:src="@drawable/meeting1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="未完成"
+                android:padding="@dimen/dp_2"
+                android:textColor="#3e3d3d"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/btn_bg_white_to_grey"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/meeting_ing"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="@dimen/dp_2"
+                android:background="@color/white"
+                android:src="@drawable/meeting2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="进行中"
+                android:textColor="#3e3d3d"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/btn_bg_white_to_grey"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/meeting_complete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="@dimen/dp_2"
+                android:background="@color/white"
+                android:src="@drawable/meeting3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="已完成"
+                android:textColor="#3e3d3d"
+                android:textSize="@dimen/dp_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/btn_bg_white_to_grey"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/meeting_nagetive"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="@dimen/dp_2"
+                android:background="@color/white"
+                android:src="@drawable/meeting4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="已取消"
+                android:textColor="#3e3d3d"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/user_meeting_collect"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:background="@drawable/btn_bg_white_to_grey"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="会议收藏"
+            android:textColor="#353535"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/user_meeting_order_record"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:background="@drawable/btn_bg_white_to_grey"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="版本检查"
+            android:textColor="#353535"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/btn_bg_white_to_grey"
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="退出登录"
+            android:textColor="#353535"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

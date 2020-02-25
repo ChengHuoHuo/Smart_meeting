@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--
+    这里 使用 weight , 设置为 1 ,高度设置为 0dp后 就填充了 页面的剩余部分
+     -->
+
+    <android.support.v4.view.ViewPager
+        android:layout_centerVertical="true"
+        android:id="@+id/vp_fragment_viewpage"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+
+    <include layout="@layout/buttom"/>
+</LinearLayout>
